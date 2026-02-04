@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="title">Product Filters</h2>
+
+<select id="filter">
+  <option value="all">All Products</option>
+  <option value="car">Cars</option>
+  <option value="bike">Bikes</option>
+  <option value="camera">Cameras</option>
+  <option value="toy">Toys</option>
+</select>
+
+<div class="product-grid">
+
+  <!-- Cars (4) -->
+  <div class="card" data-category="car"><img src="images/tesla.png"><p>Tesla Model S</p></div>
+  <div class="card" data-category="car"><img src="images/bmw.png"><p>BMW X5</p></div>
+  <div class="card" data-category="car"><img src="images/audi a6.png"><p>Audi A6</p></div>
+  <div class="card" data-category="car"><img src="images/mercedes1.png"><p>Toyota Corolla</p></div>
+
+  <!-- Bikes (4) -->
+  <div class="card" data-category="bike"><img src="images/kawasaki.png"><p>Kawasaki Ninja</p></div>
+  <div class="card" data-category="bike"><img src="images/yamaha.png"><p>Yamaha R1</p></div>
+  <div class="card" data-category="bike"><img src="images/honda cbr.png"><p>Honda CBR</p></div>
+  <div class="card" data-category="bike"><img src="images/harley davidson.png"><p>Harley Davidson</p></div>
+
+  <!-- Cameras (4) -->
+  <div class="card" data-category="camera"><img src="images/canon.png"><p>Canon EOS R5</p></div>
+  <div class="card" data-category="camera"><img src="images/sony.png"><p>Sony Alpha</p></div>
+  <div class="card" data-category="camera"><img src="images/nikon.png"><p>Nikon Z6</p></div>
+  <div class="card" data-category="camera"><img src="images/fujifilm.png"><p>Fujifilm XT4</p></div>
+
+  <!-- Toys (4) -->
+  <div class="card" data-category="toy"><img src="images/iphone 16.png"><p>Lego Set</p></div>
+  <div class="card" data-category="toy"><img src="images/samsung s24.png"><p>Hot Wheels</p></div>
+  <div class="card" data-category="toy"><img src="images/google pixel.png"><p>RC Car</p></div>
+  <div class="card" data-category="toy"><img src="images/oneplus.png"><p>Action Figure</p></div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
