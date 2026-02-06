@@ -38,3 +38,62 @@ select{
   height:150px;
   object-fit:contain;
 }
+.meta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:10px;
+}
+
+.price{
+  background:linear-gradient(135deg,#1abc9c,#16a085);
+  color:#fff;
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.rating{
+  background:linear-gradient(135deg,#f39c12,#f1c40f);
+  color:#fff;
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:14px;
+  font-weight:bold;
+}
+/* Dropdown Container Feel */
+#filter{
+  width:220px;
+  padding:10px 15px;
+  border-radius:25px;
+  border:none;
+  outline:none;
+  font-size:15px;
+  font-weight:600;
+  color:#333;
+  background:linear-gradient(135deg,#6a11cb,#2575fc);
+  color:#fff;
+  cursor:pointer;
+  box-shadow:0 8px 18px rgba(0,0,0,0.2);
+  transition:0.3s ease;
+}
+
+/* Hover Effect */
+#filter:hover{
+  transform:scale(1.05);
+  box-shadow:0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Focus Effect */
+#filter:focus{
+  box-shadow:0 0 0 3px rgba(255,255,255,0.5);
+}
+
+/* Dropdown Options */
+#filter option{
+  background:#fff;
+  color:#333;
+  font-weight:500;
+}
+
