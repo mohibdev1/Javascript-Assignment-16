@@ -1,11 +1,8 @@
 body{
   font-family: Arial, sans-serif;
-  background:#f4f4f4;
+  min-height:100vh;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
   padding:20px;
-}
-
-.title{
-  text-align:center;
 }
 
 select{
@@ -62,7 +59,7 @@ select{
   font-size:14px;
   font-weight:bold;
 }
-/* Dropdown Container Feel */
+
 #filter{
   width:220px;
   padding:10px 15px;
@@ -79,21 +76,34 @@ select{
   transition:0.3s ease;
 }
 
-/* Hover Effect */
 #filter:hover{
   transform:scale(1.05);
   box-shadow:0 12px 25px rgba(0,0,0,0.3);
 }
 
-/* Focus Effect */
+
 #filter:focus{
   box-shadow:0 0 0 3px rgba(255,255,255,0.5);
 }
 
-/* Dropdown Options */
 #filter option{
   background:#fff;
   color:#333;
   font-weight:500;
 }
 
+.title{
+  text-align:center;
+  font-size:34px;
+  font-weight:700;
+  color:#fff;
+  margin-bottom:5px;
+  letter-spacing:1px;
+}
+
+.filter-text{
+  text-align:center;
+  font-size:15px;
+  color:#ddd;
+  margin-bottom:25px;
+}
