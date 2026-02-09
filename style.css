@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
   font-family: Arial, sans-serif;
   min-height:100vh;
@@ -106,4 +110,64 @@ select{
   font-size:15px;
   color:#ddd;
   margin-bottom:25px;
+}
+
+@media (max-width:1024px){
+  .product-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+
+@media (max-width:768px){
+  .product-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .title{
+    font-size:28px;
+  }
+
+  #filter{
+    width:200px;
+  }
+}
+
+
+@media (max-width:480px){
+  body{
+    padding:15px;
+  }
+
+  .product-grid{
+    grid-template-columns:1fr;
+  }
+
+  .card img{
+    height:130px;
+  }
+
+  .meta{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .price,
+  .rating{
+    width:100%;
+    text-align:center;
+  }
+
+  .title{
+    font-size:24px;
+  }
+
+  .filter-text{
+    font-size:14px;
+  }
+
+  #filter{
+    width:100%;
+    max-width:280px;
+  }
 }
